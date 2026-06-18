@@ -80,6 +80,13 @@ time-based splitting with a gap buffer, and a detailed section on data leakage p
 Each knowledge base is a single Markdown file. Open it in any editor or paste it into a chat
 context alongside your question.
 
+### AI Agent knowledge source
+
+Each knowledge base is structured for direct consumption by an AI agent. The H2-chunked format,
+keyword-labeled sections, and version-annotated examples mean an agent querying this repo gets
+correct syntax instead of hallucinations. Drop the `rag-chunks/` directories into any vector
+store or load the repo into a Claude Project for instant SQL Server context.
+
 ### RAG ingestion
 
 Each file is structured with H2 section headings and fenced code blocks. Chunk by H2 section
