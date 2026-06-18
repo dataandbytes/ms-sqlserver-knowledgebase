@@ -29,14 +29,14 @@ Store, Extended Events, TempDB sizing, backup and restore including S3 (2022+), 
 Availability Groups, SQL Agent, and dedicated sections for SQL Server 2022, 2025 (vector search,
 DiskANN), and common mistakes.
 
-### [sql-server-performance](sql-server-performance/sql-server-performance-knowledge-base.md)
+### [sql-server-performancetuning](sql-server-performance/sql-server-performance-knowledge-base.md)
 Focused on diagnosing and fixing slow queries. Covers reading execution plans (seek vs scan, key
 lookup, hash/merge/nested-loop joins, parallelism), wait statistics methodology, index strategy
 decisions, statistics freshness and manual UPDATE STATISTICS, parameter sniffing and mitigation,
 blocking and locking patterns with RCSI, and chunked batch operations. Includes before/after
 logical read examples and a full server-health diagnostic script.
 
-### [mssql-writing-guidelines](mssql-writing-guidelines/mssql-writing-guidelines-knowledge-base.md)
+### [mssql-writing-standards](mssql-writing-guidelines/mssql-writing-guidelines-knowledge-base.md)
 Prescriptive patterns for writing SQL Server application code as a system rather than ad-hoc
 queries. Covers: two access rules (reads via views, mutations via procedures), custom type system
 with `CREATE TYPE`, the `_trx/_utx/_ut` transaction hierarchy with full 5-block templates,
@@ -53,7 +53,7 @@ DATE_BUCKET (2022+) and DATEADD/DATEDIFF patterns for older versions, calendar t
 seeding, gap filling via LEFT JOIN, tally tables and GENERATE_SERIES, gaps-and-islands technique,
 pivot and unpivot, and FOR JSON PATH export.
 
-### [sql-ml-features](sql-ml-features/sql-ml-features-knowledge-base.md)
+### [sql-ml](sql-ml/sql-ml-features-knowledge-base.md)
 Building ML training datasets in T-SQL. Covers the feature table workflow (#Base pattern),
 numeric transforms (log, z-score, min-max, NTILE), categorical encoding (one-hot, ordinal,
 frequency), temporal features keyed to a fixed `@SnapshotDate`, RFM scoring, rolling window
